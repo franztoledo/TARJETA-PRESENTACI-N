@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="span">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Card Franz</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            font-family: 'Roboto Mono', monospace;
+            height: 100vh;
+            width: 100vw;
+            background-image: linear-gradient(180deg, #7d4159 0, #773959 12.5%, #6f3159 25%, #652859 37.5%, #591f59 50%, #4b185a 62.5%, #3a135b 75%, #24125d 87.5%, #00125f 100%);
+        }
+        .card {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            width: 450px;
+            height: 526px;
+            border-radius: 84px;
+            background: rgb(229, 209, 244);
+            border: 1px solid #ccc;
+            border: 5px solid #3a135b;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .container .profile-img{
+            box-sizing: border-box;
+            border: solid 1px #ccc;
+            width: 200px;
+            height: 200px;        
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 26px;
+            box-shadow: 2px 2px 5px #4e285c;
+        }
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+        }
+        .profile-img:hover {
+            border: 5px solid #3a135b ;
+            box-shadow: 2px 2px 5px #4e285c;
+        }
+        img:active{
+            transform: scale(1.1);
+            box-shadow: 2px 2px 5px #55126b;
+        }
+        .container h1{
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            border-bottom: 2px solid #3a135b;
+        }
+        .info:hover {
+            background-color: black;
+            color: aliceblue;
+        }
+        .container p:nth-child(3){
+            text-align: center;
+            font-size: 22px;
+        }
+        .footer{
+            display: flex;
+            justify-content: center;
+
+        }
+        .icons {
+            margin: 20px;
+            font-size: 40px;
+        }
+        .icons:hover{
+            color: #b279e8;
+        }
+        .icons:active{
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <section class="card">
+        <div class="container">
+            <div class="profile-img">
+                <img src="https://i.ibb.co/7kGKmsz/Screenshot-2022-07-09-123311.jpg" alt="Profile">
+            </div>
+            <h1 class="info">FRANZ TOLEDO</h1>
+            <p class="info">Frontend Developer Jr.</p>
+        </div>
+        <div class="footer">
+            <a href="https://github.com/franztoledo" class="icons">
+                <i class="fa fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/franz.toledo.04/" class="icons">
+                <i class="fa fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/franz.toledo.04" class="icons">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+            <a href="" class="icons">
+                <i class="fa fa-twitter-square"></i>
+            </a>
+        </div>
+    </section>
+</body>
+</html>
